@@ -1,0 +1,95 @@
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±± NAVBAR ±±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+nav.topNavBar {
+    display: flex;
+    width: 100vw;
+    min-height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffffba;
+    font-size: 120%;
+    position: absolute;
+    font-weight: bold;
+}
+p.nameWebsite {
+    margin-left: 5%;
+    transition: all 0.3s ease;
+}
+p.nameWebsite:hover {
+    color: var(--tertiary);
+    cursor: pointer;
+}
+ul.listNavItems {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 20%;
+    margin-right: 5%;
+}
+li.navItem {
+    cursor: pointer;
+    padding: 3%;
+    background: linear-gradient(120deg, var(--tertiary) 0%, var(--tertiary) 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 10%;
+    background-position: 0 80%;
+    transition: all 0.4s ease;
+}
+li.navItem:hover {
+    background: linear-gradient(120deg, var(--tertiary) 0%, var(--tertiary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 10%;
+    background-position: 0 80%;
+    
+}
+
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±± HEADER ±±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../res/villa/hero2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--primary);
+}
+h1.heroTitle {
+    font-size: 300%;
+}
+span.highlight {
+    color: var(--tertiary);
+}
+button.cta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    color: var(--primary);
+    padding: 0.7% 2%;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 2px;
+    margin: 2.5% auto 0;
+    font-size: 120%;
+    cursor: pointer;
+    border: 1px solid var(--tertiary);
+    transition: all 0.3s ease;
+}
+button.cta:hover {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±±± MAIN ±±±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+main {
+    
+}
