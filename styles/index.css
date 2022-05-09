@@ -9,7 +9,7 @@ nav.topNavBar {
     justify-content: space-between;
     background-color: #ffffffba;
     font-size: 120%;
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
     font-weight: bold;
 }
@@ -97,20 +97,26 @@ button.cta:hover {
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±± DETAIL ±±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-div.details {
+div#details {
     width: 90vw;
     display: flex;
     flex-direction: column;
     margin: -5% auto 0;
 }
+div.row.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
 div.row {
     display: flex;
     width: 90vw;
     margin-bottom: 5%;
+    transform: translateX(-100%);
+    transition: all 0.8s ease;
 }
-div.row.reverse {
-    display: flex;
-    flex-direction: row-reverse;
+div.row.visible {
+    transform: translateX(0);
 }
 div.detail {
     background-color: var(--primary);
@@ -121,7 +127,12 @@ div.detail {
     border-radius: 3px;
     box-shadow: 5px 5px 10px 1px var(--shadow);
     justify-content: center;
-    z-index: 100;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+div.detail:hover {
+    transform: translateY(-2%) translateX(-2%);
+    box-shadow: 10px 10px 10px 1px var(--shadow);
 }
 div.detail div.left {
     width: fit-content;
@@ -141,19 +152,19 @@ div.detail div.right h3.titleDetail {
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±± CONTACT ±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-div.reservationandcontact {
+div#reservationandcontact {
     width: 85vw;
     display: flex;
     margin: 0 auto 5%;
     border-radius: 2px;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 10;
 }
-div.reservationandcontact fieldset {
+div#reservationandcontact fieldset {
     width: 38vw;
     display: flex;
     padding: 2%;
-    border: 1px solid var(--color);
+    border: 1.5px solid var(--color);
     border-radius: 2px;
     height: 47vh;
 }
@@ -289,6 +300,45 @@ button.ctaReservation:hover {
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±±± ANIM ±±±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+div.wrapperImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--color)
+}
+div.wrapperImg div.cross {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+div.wrapperImg div.cross div.bar {
+    width: 60px;
+    height: 1px;
+    background-color: var(--primary);
+    transform-origin: 0% 50%;
+}
+div.wrapperImg div.cross div.bar:nth-child(1) {
+    transform: rotate(45deg);
+}
+div.wrapperImg div.cross div.bar:nth-child(2) {
+    transform: rotate(-45deg);
+}
+div.wrapperImg.visible {
+    top: 0;
+}
+div.wrapperImg img {
+    width: 70vw;
+}
 div.blueCircle {
     z-index: -100;
     display: flex;

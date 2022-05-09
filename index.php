@@ -11,17 +11,24 @@
     </head>
     <body onload="init()">
         <nav class='topNavBar'>
-            <p class='nameWebsite'><span class="name"></span></p>
+            <p class='nameWebsite js-scrollTo' href="body"><span class="name"></span></p>
             <ul class='listNavItems'>
-                <li class='navItem'>Détails</li>
-                <li class='navItem'>Reservation</li>
-                <li class='navItem'>Avis</li>
+                <li class='navItem js-scrollTo' href="#details">Détails</li>
+                <li class='navItem js-scrollTo' href="#reservationandcontact">Reservation</li>
+                <li class='navItem js-scrollTo' href="#advices">Avis</li>
             </ul>
         </nav>
         <header>
             <h1 class="heroTitle"><span class="name"></span>, votre <span class="highlight">rêve</span> dans notre villa en <span class="highlight">corse</span></h1>
-            <button class="cta">Découvir</button>
+            <button class="cta js-scrollTo" href="#details">Découvir</button>
         </header>
+        <div class="wrapperImg">
+            <img src="" alt="Image selected">
+            <div class="cross">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
         <main>
             <div class="blueCircle bc1">
                 <div class="whiteCircle"></div>
@@ -32,11 +39,11 @@
             <div class="blueCircle bc3">
                 <div class="whiteCircle"></div>
             </div>
-            <div class="details">
+            <div id="details">
                 <div class="row">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero0.jpeg" alt="villa and beach">
+                            <img src="./res/hero0.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Situation</h3>
@@ -47,7 +54,7 @@
                 <div class="row reverse">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero4.jpeg" alt="villa and beach">
+                            <img src="./res/hero4.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Pièces</h3>
@@ -58,7 +65,7 @@
                 <div class="row">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero10.jpeg" alt="villa and beach">
+                            <img src="./res/hero10.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Chambres</h3>
@@ -69,7 +76,7 @@
                 <div class="row reverse">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero1.jpeg" alt="villa and beach">
+                            <img src="./res/hero1.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Plages</h3>
@@ -80,7 +87,7 @@
                 <div class="row">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero6.jpeg" alt="villa and beach">
+                            <img src="./res/hero6.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Évenements</h3>
@@ -91,7 +98,7 @@
                 <div class="row reverse">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero11.jpeg" alt="villa and beach">
+                            <img src="./res/hero11.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Équipements</h3>
@@ -100,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reservationandcontact">
+            <div id="reservationandcontact">
                 <fieldset class="contact">
                     <legend>Contactez nous</legend>
                     <form method="post">
@@ -139,11 +146,26 @@
                     </form>
                 </fieldset>
             </div>
+            <div id="advices">
+
+            </div>
         </main>
         <footer>
             
         </footer>
         <script src="./js/data.js"></script>
+        <script src="./js/observer.js"></script>
         <script src="./js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 750; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
     </body>
 <html>
