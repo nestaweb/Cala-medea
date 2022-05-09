@@ -9,6 +9,7 @@ nav.topNavBar {
     justify-content: space-between;
     background-color: #ffffffba;
     font-size: 120%;
+    z-index: 1000;
     position: fixed;
     font-weight: bold;
 }
@@ -120,6 +121,7 @@ div.detail {
     border-radius: 3px;
     box-shadow: 5px 5px 10px 1px var(--shadow);
     justify-content: center;
+    z-index: 100;
 }
 div.detail div.left {
     width: fit-content;
@@ -145,6 +147,7 @@ div.reservationandcontact {
     margin: 0 auto 5%;
     border-radius: 2px;
     justify-content: space-between;
+    z-index: 100;
 }
 div.reservationandcontact fieldset {
     width: 38vw;
@@ -281,4 +284,35 @@ button.ctaReservation {
 }
 button.ctaReservation:hover {
     transform: scale(1.02);
+}
+
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±±± ANIM ±±±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+div.blueCircle {
+    z-index: -100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--round);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+div.blueCircle div.whiteCircle {
+    background-color: var(--primary);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+div.bc1 {
+    transform: translateY(30%) translateX(-50%);
+}
+div.bc2 {
+    transform: translateY(145%) translateX(250%);
+}
+div.bc3 {
+    transform: translateY(260%) translateX(-50%);
 }

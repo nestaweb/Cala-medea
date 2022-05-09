@@ -23,6 +23,15 @@
             <button class="cta">Découvir</button>
         </header>
         <main>
+            <div class="blueCircle bc1">
+                <div class="whiteCircle"></div>
+            </div>
+            <div class="blueCircle bc2">
+                <div class="whiteCircle"></div>
+            </div>
+            <div class="blueCircle bc3">
+                <div class="whiteCircle"></div>
+            </div>
             <div class="details">
                 <div class="row">
                     <div class="detail">
