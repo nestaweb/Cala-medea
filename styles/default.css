@@ -4,7 +4,10 @@
     --secondary: #000000;
     --tertiary: #00c3ff;
     
+    --shadow: #44444473;
     --color: #262628;
+
+    --blue: #0099ff;
 }
 
 * {
@@ -16,4 +19,5 @@ body {
     background-color: var(--primary);
     color: var(--color);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }

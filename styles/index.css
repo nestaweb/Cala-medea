@@ -9,7 +9,7 @@ nav.topNavBar {
     justify-content: space-between;
     background-color: #ffffffba;
     font-size: 120%;
-    position: absolute;
+    position: fixed;
     font-weight: bold;
 }
 p.nameWebsite {
@@ -17,30 +17,32 @@ p.nameWebsite {
     transition: all 0.3s ease;
 }
 p.nameWebsite:hover {
-    color: var(--tertiary);
+    color: var(--blue);
     cursor: pointer;
 }
 ul.listNavItems {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    width: 20%;
+    width: 30%;
     margin-right: 5%;
 }
 li.navItem {
     cursor: pointer;
     padding: 3%;
-    background: linear-gradient(120deg, var(--tertiary) 0%, var(--tertiary) 100%);
+    background: linear-gradient(120deg, var(--blue) 0%, var(--blue) 100%);
     background-repeat: no-repeat;
     background-size: 0% 10%;
-    background-position: 0 80%;
+    background-position: 50% 80%;
+    /* background-position: 0% 80%; */
     transition: all 0.4s ease;
 }
 li.navItem:hover {
-    background: linear-gradient(120deg, var(--tertiary) 0%, var(--tertiary) 100%);
+    background: linear-gradient(120deg, var(--blue) 0%, var(--blue) 100%);
     background-repeat: no-repeat;
     background-size: 100% 10%;
-    background-position: 0 80%;
+    background-position: 50% 80%;
+    /* background-position: 0% 80%; */
     
 }
 
@@ -54,7 +56,7 @@ header {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url("../res/villa/hero2.jpeg");
+    background-image: url("../res/hero2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,6 +92,193 @@ button.cta:hover {
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±±± MAIN ±±±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-main {
+
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±± DETAIL ±±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+div.details {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin: -5% auto 0;
+}
+div.row {
+    display: flex;
+    width: 90vw;
+    margin-bottom: 5%;
+}
+div.row.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+div.detail {
+    background-color: var(--primary);
+    padding: 2%;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px 1px var(--shadow);
+    justify-content: center;
+}
+div.detail div.left {
+    width: fit-content;
+}
+div.detail div.left img {
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+}
+div.detail div.right {
+    width: 130%;
+}
+div.detail div.right h3.titleDetail {
+    margin-bottom: 2%;
+}
+
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±± CONTACT ±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+div.reservationandcontact {
+    width: 85vw;
+    display: flex;
+    margin: 0 auto 5%;
+    border-radius: 2px;
+    justify-content: space-between;
+}
+div.reservationandcontact fieldset {
+    width: 38vw;
+    display: flex;
+    padding: 2%;
+    border: 1px solid var(--color);
+    border-radius: 2px;
+    height: 47vh;
+}
+fieldset legend {
+    padding: 0 1%;
+    font-size: 130%;
+}
+fieldset form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+fieldset.contact .contact {
+    border: 1px solid var(--color);
+    border-radius: 2px;
+    outline: none;
+    background: transparent;
+    padding: 1%;
+    font-size: 90%;
+    transition: all 0.3s ease;
+}
+fieldset.contact .contact:focus {
+    border: 1px solid var(--blue);
+}
+fieldset.contact form div.top, div.bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+fieldset.contact input.contact.name, input.contact.email, input.contact.numero{
+    width: 45%;
+    margin-bottom: 3%;
+}
+fieldset.contact textarea.contact {
+    width: 96%;
+    resize: none;
+    height: 60%;
+    font-family: "Montserrat", sans-serif;
+}
+button.ctaContact {
+    display: flex;
+    align-items: center;
+    background-color: var(--color);
+    color: var(--primary);
+    justify-content: center;
+    border-radius: 3px;
+    margin: 2% auto;
+    border: 1px solid var(--color);
+    padding: 1% 2%;
+    font-size: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button.ctaContact:hover {
+    transform: scale(1.02);
+}
+
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±± RESERVER ±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+fieldset.reservation {
+    display: flex;
+}
+fieldset.reservation form {
+    justify-content: flex-start;
+}
+fieldset.reservation .reservation {
+    border: 1px solid var(--color);
+    border-radius: 2px;
+    outline: none;
+    background: transparent;
+    padding: 1%;
+    font-size: 90%;
+    transition: all 0.3s ease;
+}
+fieldset.reservation .reservation:focus {
+    border: 1px solid var(--blue);
+}
+fieldset.reservation div.headInfos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto 2%;
+}
+fieldset.reservation div.headInfos input {
+    width: 40%;
+    margin-bottom: 2%;
+}
+input.reservation.date {
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5% 2%;
+    outline: none;
+    border: 1px solid var(--color);
+    background: transparent;
+}
+fieldset.reservation form div.date {
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     
+}
+fieldset.reservation form div.date div.selectDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-direction: column;
+    width: 40%;
+}
+button.ctaReservation {
+    display: flex;
+    align-items: center;
+    background-color: var(--color);
+    color: var(--primary);
+    justify-content: center;
+    border-radius: 3px;
+    margin: 4% auto;
+    border: 1px solid var(--color);
+    padding: 1% 2%;
+    font-size: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button.ctaReservation:hover {
+    transform: scale(1.02);
 }
