@@ -368,3 +368,18 @@ div.bc2 {
 div.bc3 {
     transform: translateY(260%) translateX(-50%);
 }
+div.bc4 {
+    transform: translateY(85%) translateX(130%);
+    display: none;
+}
+
+div.bc5 {
+    transform: translateY(-85%) translateX(-130%);
+    display: none;
+}
+div.bc4.visible, div.bc5.visible {
+    display: flex;
+}
+div.bc4 div.whiteCircle, div.bc5 div.whiteCircle {
+    background-color: var(--color);
+}

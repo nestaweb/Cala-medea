@@ -22,23 +22,29 @@
             <h1 class="heroTitle"><span class="name"></span>, votre <span class="highlight">rêve</span> dans notre villa en <span class="highlight">corse</span></h1>
             <button class="cta js-scrollTo" href="#details">Découvir</button>
         </header>
+        <div class="blueCircle bc1">
+            <div class="whiteCircle"></div>
+        </div>
+        <div class="blueCircle bc2">
+            <div class="whiteCircle"></div>
+        </div>
+        <div class="blueCircle bc3">
+            <div class="whiteCircle"></div>
+        </div>
         <div class="wrapperImg">
+            <div class="blueCircle bc4">
+                <div class="whiteCircle"></div>
+            </div>
             <img src="" alt="Image selected">
             <div class="cross">
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <div class="blueCircle bc5">
+                <div class="whiteCircle"></div>
+            </div>
         </div>
         <main>
-            <div class="blueCircle bc1">
-                <div class="whiteCircle"></div>
-            </div>
-            <div class="blueCircle bc2">
-                <div class="whiteCircle"></div>
-            </div>
-            <div class="blueCircle bc3">
-                <div class="whiteCircle"></div>
-            </div>
             <div id="details">
                 <div class="row">
                     <div class="detail">
