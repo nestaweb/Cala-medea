@@ -17,6 +17,7 @@
 }
 
 body {
+    /* background-color: rgb(255, 235, 168); */
     background-color: var(--primary);
     color: var(--color);
     font-family: 'Montserrat', sans-serif;

@@ -157,11 +157,11 @@ div#reservationandcontact {
     display: flex;
     margin: 0 auto 5%;
     border-radius: 2px;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 10;
 }
 div#reservationandcontact fieldset {
-    width: 38vw;
+    width: 50vw;
     display: flex;
     padding: 2%;
     border: 1.5px solid var(--color);
@@ -223,77 +223,6 @@ button.ctaContact {
     transition: all 0.2s ease;
 }
 button.ctaContact:hover {
-    transform: scale(1.02);
-}
-
-/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-/* ±±±±±±±± RESERVER ±±±±±±±± */
-/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-fieldset.reservation {
-    display: flex;
-}
-fieldset.reservation form {
-    justify-content: flex-start;
-}
-fieldset.reservation .reservation {
-    border: 1px solid var(--color);
-    border-radius: 2px;
-    outline: none;
-    background: transparent;
-    padding: 1%;
-    font-size: 90%;
-    transition: all 0.3s ease;
-}
-fieldset.reservation .reservation:focus {
-    border: 1px solid var(--blue);
-}
-fieldset.reservation div.headInfos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto 2%;
-}
-fieldset.reservation div.headInfos input {
-    width: 40%;
-    margin-bottom: 2%;
-}
-input.reservation.date {
-    font-family: "Montserrat", sans-serif;
-    padding: 0.5% 2%;
-    outline: none;
-    border: 1px solid var(--color);
-    background: transparent;
-}
-fieldset.reservation form div.date {
-    display: flex;
-    font-weight: bold;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    
-}
-fieldset.reservation form div.date div.selectDate {
-    display: flex;
-    justify-content: space-between;
-    align-items: space-between;
-    flex-direction: column;
-    width: 40%;
-}
-button.ctaReservation {
-    display: flex;
-    align-items: center;
-    background-color: var(--color);
-    color: var(--primary);
-    justify-content: center;
-    border-radius: 3px;
-    margin: 4% auto;
-    border: 1px solid var(--color);
-    padding: 1% 2%;
-    font-size: 100%;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-button.ctaReservation:hover {
     transform: scale(1.02);
 }
 

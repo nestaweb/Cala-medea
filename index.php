@@ -129,28 +129,6 @@
                         <button class="ctaContact">Envoyer</button>
                     </form>
                 </fieldset>
-                <fieldset class="reservation">
-                    <legend>Reservez</legend>
-                    <form method="post">
-                        <div class="headInfos">
-                            <input name="firstName" type="text" placeholder="Nom" class="reservation name" required>
-                            <input name="lastName" type="text" placeholder="Prénom" class="reservation name" required>
-                            <input name="email" type="email" placeholder="john@exemple.com" class="reservation email" required>
-                            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Numero de téléphone" class="reservation numero" required>
-                        </div>
-                        <div class="date">
-                            <div class="selectDate">
-                                <label for="startDate">Date d'arrivé : </label>
-                                <input type="date" name="startDate" class="reservation date" required>
-                            </div>
-                            <div class="selectDate">
-                                <label for="startDate">Date de départ : </label>
-                                <input type="date" name="endDate" class="reservation date" required>
-                            </div>
-                        </div>
-                        <button class="ctaReservation">Valider</button>
-                    </form>
-                </fieldset>
             </div>
             <div id="advices">
 
