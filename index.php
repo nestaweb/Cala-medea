@@ -18,6 +18,7 @@
 
         <link rel='stylesheet' href='./styles/default.css'>
         <link rel='stylesheet' href='./styles/index.css'>
+        <link rel='stylesheet' href='./styles/responsive.css'>
     </head>
     <body onload="init()">
         <?php require_once('./components/navBar.php'); ?>

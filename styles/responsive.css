@@ -1,0 +1,53 @@
+@media screen and (max-width: 900px) {
+    nav.topNavBar {
+        display: none;
+    }
+    h1.heroTitle {
+        text-align: center;
+    }
+    button.cta {
+        padding: 2% 4%;
+        font-size: 130%;
+        margin: 15% auto 0;
+        background-color: var(--shadow);
+        border: none;
+    }
+    div.detail {
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+    }
+    div.detail div.right {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5%;
+    }
+    div.detail div.left {
+        display: flex;
+        justify-content: center;
+    }
+    div#reservationandcontact fieldset {
+        width: 100%;
+    }
+    div.titleSection div.transitionBar {
+        width: 20vw;
+    }
+    div.advice {
+        max-width: 90vw;
+    }
+    footer div#sectionsFooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div.sectionFooter {
+        width: 80vw;
+        margin-bottom: 8%;
+        padding: 5%;
+    }
+    footer div#copyrights {
+        margin-top: 0%;
+    }
+}
