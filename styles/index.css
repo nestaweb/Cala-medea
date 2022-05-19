@@ -25,7 +25,7 @@ ul.listNavItems {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
     margin-right: 5%;
 }
 li.navItem {
@@ -227,88 +227,117 @@ button.ctaContact:hover {
 }
 
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-/* ±±±±±±±±±± ANIM ±±±±±±±±±± */
+/* ±±±±±±±±± ADVICES ±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-div.wrapperImg {
+div#advices {
+    width: 85vw;
     display: flex;
-    justify-content: center;
+    margin: 0 auto 5%;
+    border-radius: 2px;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 1000;
-    background-color: var(--color)
-}
-div.wrapperImg div.cross {
-    position: absolute;
-    top: 4%;
-    left: 4%;
-    width: 45px;
-    height: 45px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
 }
-div.wrapperImg div.cross div.bar {
-    width: 60px;
-    height: 1px;
-    background-color: var(--primary);
-    transform: rotate(0deg);
-    transform-origin: 0% 50%;
+div.titleSection {
+    display: flex;
+    margin-bottom: 4%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+div.titleSection div.transitionBar {
+    background-color: var(--color);
+    height: 2px;
+    width: 30vw;
+}
+h1.titleSection {
+    cursor: default;
     transition: all 0.3s ease;
 }
-div.wrapperImg div.cross:hover div.bar:nth-child(1) {
-    transform: rotate(45deg);
+h1.titleSection:hover {
+    color: var(--blue);
 }
-div.wrapperImg div.cross:hover div.bar:nth-child(2) {
-    transform: rotate(-45deg);
+div.advice {
+    border: 1px solid var(--color);
+    border-radius: 3px;
+    padding: 2%;
+    max-width: 60vw;
+    margin-bottom: 4%;
+    transition: all 0.3s ease;
 }
-div.wrapperImg.visible {
-    top: 0;
+div.advice:hover {
+    transform: scale(1.005);
+    border-color: var(--blue);
 }
-div.wrapperImg img {
-    width: 70vw;
-}
-div.blueCircle {
-    z-index: -100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--round);
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-}
-div.blueCircle div.whiteCircle {
-    background-color: var(--primary);
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-}
-div.bc1 {
-    transform: translateY(30%) translateX(-50%);
-}
-div.bc2 {
-    transform: translateY(145%) translateX(250%);
-}
-div.bc3 {
-    transform: translateY(260%) translateX(-50%);
-}
-div.bc4 {
-    transform: translateY(85%) translateX(130%);
-    display: none;
+div.advice p.name {
+    font-size: 115%;
+    font-weight: bold;
+    margin-bottom: 3%;
 }
 
-div.bc5 {
-    transform: translateY(-85%) translateX(-130%);
-    display: none;
-}
-div.bc4.visible, div.bc5.visible {
-    display: flex;
-}
-div.bc4 div.whiteCircle, div.bc5 div.whiteCircle {
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+/* ±±±±±±±±± FOOTER ±±±±±±±±± */
+/* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
+footer {
+    width: 101vw;
+    padding: 2.5%;
     background-color: var(--color);
+    color: var(--primary);
+    justify-content: center;
+}
+footer h2.titleSection {
+    margin: 0 0 5% 5%;
+}
+footer div#sectionsFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+footer div.sectionFooter {
+    background-color: var(--shadow);
+    width: 26vw;
+    padding: 2%;
+    border-radius: 3px;
+}
+footer div.sectionFooter h3.titleSectionFooter {
+    font-size: 130%;
+    margin-bottom: 2%;
+}
+footer div.sectionFooter div.linksFooter {
+    padding-left: 4%;
+    color: var(--blue);
+    font-size: 100%;
+}
+footer div.sectionFooter div.linksFooter a.link {
+    margin-bottom: 100%;
+}
+footer div.sectionFooter form input, footer div.sectionFooter form textarea{
+    outline: none;
+    padding: 1% 2%;
+}
+footer div.sectionFooter form textarea {
+    width: 97%;
+    margin-top: 2%;
+    font-family: "Montserrat", sans-serif;
+}
+footer div.sectionFooter form button {
+    padding: 2% 4%;
+    background-color: var(--color);
+    color: var(--primary);
+    border-radius: 3px;
+    border: 1px solid var(--color);
+    font-weight: bold;
+    font-size: 100%;
+    cursor: pointer;
+    margin-top: 2%;
+    transition: all 0.3s ease;
+}
+footer div.sectionFooter form button:hover {
+    border: 1px solid var(--blue);
+
+}
+footer div#copyrights {
+    margin-left: 5%;
+    margin-top: 2%;
+    color: var(--blue);
 }

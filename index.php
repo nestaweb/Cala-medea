@@ -1,3 +1,13 @@
+<?php 
+    $pdo = new PDO('sqlite:./backend/data.db');
+    $statement = $pdo->query("SELECT firstName,lastName,content FROM ADVICES");
+    if ($statement === FALSE){
+        die('Erreur SQL');
+    }
+
+    $advices = $statement->fetchAll();
+
+?>
 <!DOCTYPE html>
 <html lang='fr'>
     <head>
@@ -10,14 +20,7 @@
         <link rel='stylesheet' href='./styles/index.css'>
     </head>
     <body onload="init()">
-        <nav class='topNavBar'>
-            <p class='nameWebsite js-scrollTo' href="body"><span class="name"></span></p>
-            <ul class='listNavItems'>
-                <li class='navItem js-scrollTo' href="#details">Détails</li>
-                <li class='navItem js-scrollTo' href="#reservationandcontact">Reservation</li>
-                <li class='navItem js-scrollTo' href="#advices">Avis</li>
-            </ul>
-        </nav>
+        <?php require_once('./components/navBar.php'); ?>
         <header>
             <h1 class="heroTitle"><span class="name"></span>, votre <span class="highlight">rêve</span> dans notre villa en <span class="highlight">corse</span></h1>
             <button class="cta js-scrollTo" href="#details">Découvir</button>
@@ -30,19 +33,6 @@
         </div>
         <div class="blueCircle bc3">
             <div class="whiteCircle"></div>
-        </div>
-        <div class="wrapperImg">
-            <div class="blueCircle bc4">
-                <div class="whiteCircle"></div>
-            </div>
-            <img src="" alt="Image selected">
-            <div class="cross">
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="blueCircle bc5">
-                <div class="whiteCircle"></div>
-            </div>
         </div>
         <main>
             <div id="details">
@@ -116,27 +106,35 @@
             <div id="reservationandcontact">
                 <fieldset class="contact">
                     <legend>Contactez nous</legend>
-                    <form method="post">
+                    <form method="post" action="./backend/mail.php">
                         <div class="top">
-                            <input name="firstName" type="text" placeholder="Nom" class="contact name" required>
-                            <input name="lastName" type="text" placeholder="Prénom" class="contact name" required>
+                            <input name="firstName" type="text" placeholder="Nom" class="contact name" autocomplete="off" required>
+                            <input name="lastName" type="text" placeholder="Prénom" class="contact name" autocomplete="off" required>
                         </div>
                         <div class="bottom">
-                            <input name="email" type="email" placeholder="john@exemple.com" class="contact email" required>
-                            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Numero de téléphone" class="contact numero" required>
+                            <input name="email" type="email" placeholder="john@exemple.com" class="contact email" autocomplete="off" required>
+                            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Numero de téléphone" class="contact numero" autocomplete="off" required>
                         </div>
-                        <textarea name="message" type="text" placeholder="Votre message" class="contact message" required></textarea>
-                        <button class="ctaContact">Envoyer</button>
+                        <textarea name="message" type="text" placeholder="Votre message" class="contact message" autocomplete="off" required></textarea>
+                        <button class="ctaContact" type="submit">Envoyer</button>
                     </form>
                 </fieldset>
             </div>
             <div id="advices">
-
+                <div class="titleSection">
+                    <div class="transitionBar"></div>
+                    <h1 class="titleSection">Vos avis</h1>
+                    <div class="transitionBar"></div>
+                </div>
+                <?php foreach ($advices as $advice) {?>
+                    <div class="advice">
+                        <p class="name"><?php echo $advice[1] ?> <?php echo $advice[0] ?></p>
+                        <p class="content"><?php echo $advice[2] ?></p>
+                    </div>
+                <?php } ?>
             </div>
         </main>
-        <footer>
-            
-        </footer>
+        <?php require_once('./components/footer.php'); ?>
         <script src="./js/data.js"></script>
         <script src="./js/observer.js"></script>
         <script src="./js/main.js"></script>

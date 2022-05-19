@@ -1,0 +1,53 @@
+div.cross {
+    position: fixed;
+    top: 4%;
+    left: 4%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+div.cross div.bar {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color);
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
+    transition: all 0.3s ease;
+}
+div.cross:hover div.bar:nth-child(1) {
+    transform: rotate(45deg);
+}
+div.cross:hover div.bar:nth-child(2) {
+    transform: rotate(-45deg);
+}
+h1 {
+    text-align: center;
+    font-size: calc(3vmin + 30px);
+    margin: 80px 0px 200px;
+}
+.column{
+    width: 90vw;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.heading-content{
+    flex-grow: 1;
+}
+.heading-content h3 {
+    font-size: 35px;
+    padding: 0 15px;
+    position: sticky;
+    top: 15%;
+    /* color: var(--primary); */
+}
+.row div.pictures-container {
+    width: 50%;
+}
+.row div.pictures-container img{
+    width: 100%;
+}

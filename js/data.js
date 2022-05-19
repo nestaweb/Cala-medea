@@ -1,1 +1,1 @@
-const nameVilla = "Thalassa"
+const nameVilla = "Villa Thalassa"
