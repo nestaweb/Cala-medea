@@ -134,6 +134,9 @@
                         <p class="content"><?php echo $advice[2] ?></p>
                     </div>
                 <?php } ?>
+                <?php if (count($advices) == 0) {?>
+                    <h3>Aucun avis disponible pour le moment</h3>
+                <?php } ?>
             </section>
         </main>
         <?php require_once('./components/footer.php'); ?>
