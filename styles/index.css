@@ -1,3 +1,6 @@
+section {
+    scroll-snap-align: center;
+}
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±± NAVBAR ±±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
@@ -97,7 +100,7 @@ button.cta:hover {
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±± DETAIL ±±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-div#details {
+section#details {
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -148,11 +151,16 @@ div.detail div.right {
 div.detail div.right h3.titleDetail {
     margin-bottom: 2%;
 }
-
+p.transitionSentence {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 130%;
+    font-family: 'Raleway', sans-serif;
+}
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±± CONTACT ±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-div#reservationandcontact {
+section#reservationandcontact {
     width: 85vw;
     display: flex;
     margin: 0 auto 5%;
@@ -160,7 +168,7 @@ div#reservationandcontact {
     justify-content: center;
     z-index: 10;
 }
-div#reservationandcontact fieldset {
+section#reservationandcontact fieldset {
     width: 50vw;
     display: flex;
     padding: 2%;
@@ -229,7 +237,7 @@ button.ctaContact:hover {
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
 /* ±±±±±±±±± ADVICES ±±±±±±±± */
 /* ±±±±±±±±±±±±±±±±±±±±±±±±±± */
-div#advices {
+section#advices {
     width: 85vw;
     display: flex;
     margin: 0 auto 5%;
@@ -308,7 +316,7 @@ footer div.sectionFooter div.linksFooter {
     color: var(--blue);
     font-size: 100%;
 }
-footer div.sectionFooter div.linksFooter a.link {
+footer div.sectionFooter div.linksFooter .link {
     margin-bottom: 100%;
 }
 footer div.sectionFooter form input, footer div.sectionFooter form textarea{

@@ -13,7 +13,7 @@
                         <a href="./index.php#advices" class="link">
                             <p>Avis</p>
                         </a>
-                        <a onclick="showPhotos()" class="link">
+                        <a onclick="showPhotos()" class="link" href="./photos.php">
                             <p>Photos</p>
                         </a>
                     </div>

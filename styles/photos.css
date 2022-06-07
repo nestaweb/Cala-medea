@@ -39,10 +39,14 @@ h1 {
     flex-grow: 1;
 }
 .heading-content h3 {
+    display: flex;
+    align-self: flex-start;
+    overflow: visible;
     font-size: 35px;
     padding: 0 15px;
+    position: -webkit-sticky;
     position: sticky;
-    top: 15%;
+    top: 0;
     /* color: var(--primary); */
 }
 .row div.pictures-container {

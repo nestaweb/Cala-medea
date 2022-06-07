@@ -15,7 +15,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <title></title>
-
+        <meta name="description" content="Decouvrez la Villa Thallassa, la villa de vos rêve à moins d'1h d'Ajaccio entre 3500€ et 6400€ par semaine.">
         <link rel='stylesheet' href='./styles/default.css'>
         <link rel='stylesheet' href='./styles/index.css'>
         <link rel='stylesheet' href='./styles/responsive.css'>
@@ -36,7 +36,7 @@
             <div class="whiteCircle"></div>
         </div>
         <main>
-            <div id="details">
+            <section id="details">
                 <div class="row">
                     <div class="detail">
                         <div class="left">
@@ -44,18 +44,18 @@
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Situation</h3>
-                            <p class="paragraphDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos vel odio, dolores nam voluptatem. Soluta magni accusantium ratione itaque, dignissimos placeat, aperiam aspernatur deleniti eius, dolore laborum doloribus. Repellendus!</p>
+                            <p class="paragraphDetail">Notre maison de famille est située au bord de l'eau sur une petite plage de la presqu'ile de l'Isolella. Cette presqu'île a réussi à rester sauvage, avec de belles maisons traditionnelles, un petit port, plusieurs petites plages de sable. Ici pas d'immeubles ou de résidences standardisées.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row reverse">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero4.jpeg" alt="villa and beach" class="img">
+                            <img src="./res/jardin.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
-                            <h3 class="titleDetail">Pièces</h3>
-                            <p class="paragraphDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos vel odio, dolores nam voluptatem. Soluta magni accusantium ratione itaque, dignissimos placeat, aperiam aspernatur deleniti eius, dolore laborum doloribus. Repellendus!</p>
+                            <h3 class="titleDetail">Jardin</h3>
+                            <p class="paragraphDetail">La maison a été construite dans les années 60, au bord de l'eau, à une époque où cela était encore possible. Vous traverserez pour l'atteindre un grand jardin fait de palmiers, lauriers roses, citronniers, bougainvilliers, cactus... Vous pourrez vous reposer dans différents endroits de la propriété, déjeuner sous les muriers platanes ou au coin du barbecue, prendre l'apéritif sous les oliviers avec balcon sur la mer. </p>
                         </div>
                     </div>
                 </div>
@@ -65,8 +65,8 @@
                             <img src="./res/hero10.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
-                            <h3 class="titleDetail">Chambres</h3>
-                            <p class="paragraphDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos vel odio, dolores nam voluptatem. Soluta magni accusantium ratione itaque, dignissimos placeat, aperiam aspernatur deleniti eius, dolore laborum doloribus. Repellendus!</p>
+                            <h3 class="titleDetail">Souvenirs</h3>
+                            <p class="paragraphDetail">J'ai passé toutes mes vacances d'enfant dans cette maison, j'ai fait mes premiers pas à l'Isolella, j'ai joué sur la plage pendant que ma mère faisait une ratatouille à la cuisine, j'ai appris à faire de la planche à voile devant la maison. Aujourd'hui j'ai fait rénover la maison pour qu'elle soit confortable tout en gardant son âme des années 70. </p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="right">
                             <h3 class="titleDetail">Plages</h3>
-                            <p class="paragraphDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos vel odio, dolores nam voluptatem. Soluta magni accusantium ratione itaque, dignissimos placeat, aperiam aspernatur deleniti eius, dolore laborum doloribus. Repellendus!</p>
+                            <p class="paragraphDetail">Dans la région vous trouverez la magnifique plage de « mar e sol », aux eaux turquoises et au sable fin, la petite ville de Porticcio où se trouvent tous les restaurants, bars, discothèque, magasins... Vous serez rapidement aussi en montagne si vous aimez la randonnée. </p>
                         </div>
                     </div>
                 </div>
@@ -87,24 +87,25 @@
                             <img src="./res/hero6.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
-                            <h3 class="titleDetail">Évenements</h3>
-                            <p class="paragraphDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos vel odio, dolores nam voluptatem. Soluta magni accusantium ratione itaque, dignissimos placeat, aperiam aspernatur deleniti eius, dolore laborum doloribus. Repellendus!</p>
+                            <h3 class="titleDetail">Activitées</h3>
+                            <p class="paragraphDetail">La région du col de Vizzavona vous ouvrira ses chutes d'eau (la cascade des anglais, le voile de la mariée...), ses chemins escarpés, ses bergeries de montagne. Les iles sanguinaires au nord d'Ajaccio sont magnifiques au coucher du soleil ou par gros temps où les vagues se brisent au pied du phare. </p>
                         </div>
                     </div>
                 </div>
                 <div class="row reverse">
                     <div class="detail">
                         <div class="left">
-                            <img src="./res/hero11.jpeg" alt="villa and beach" class="img">
+                            <img src="./res/balade.jpeg" alt="villa and beach" class="img">
                         </div>
                         <div class="right">
-                            <h3 class="titleDetail">Équipements</h3>
-                            <p class="paragraphDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos vel odio, dolores nam voluptatem. Soluta magni accusantium ratione itaque, dignissimos placeat, aperiam aspernatur deleniti eius, dolore laborum doloribus. Repellendus!</p>
+                            <h3 class="titleDetail">Balades</h3>
+                            <p class="paragraphDetail">De jolis sentiers au bord de l'eau vous permettent de relier les différents golfes au nord et au sud d'Ajaccio. Au sud de l'Isolella, vous pourrez vous promener soit en montagne vers Cotti-Chiavari (ancien pénitencier) soit au bord de l'eau à Capo di Muro où l'anse cacao vous offre une eau bleu turquoise de carte postale.  </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="reservationandcontact">
+            </section>
+            <p class="transitionSentence">Nous espérons que vous y trouverez le bien être, le repos, les bons moments entre amis ou en famille. ☀️</p>
+            <section id="reservationandcontact">
                 <fieldset class="contact">
                     <legend>Contactez nous</legend>
                     <form method="post" action="./backend/mail.php">
@@ -120,8 +121,8 @@
                         <button class="ctaContact" type="submit">Envoyer</button>
                     </form>
                 </fieldset>
-            </div>
-            <div id="advices">
+            </section>
+            <section id="advices">
                 <div class="titleSection">
                     <div class="transitionBar"></div>
                     <h1 class="titleSection">Vos avis</h1>
@@ -133,7 +134,7 @@
                         <p class="content"><?php echo $advice[2] ?></p>
                     </div>
                 <?php } ?>
-            </div>
+            </section>
         </main>
         <?php require_once('./components/footer.php'); ?>
         <script src="./js/data.js"></script>
@@ -144,7 +145,7 @@
             $(document).ready(function() {
                 $('.js-scrollTo').on('click', function() { // Au clic sur un élément
                     var page = $(this).attr('href'); // Page cible
-                    var speed = 750; // Durée de l'animation (en ms)
+                    var speed = 500; // Durée de l'animation (en ms)
                     $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
                     return false;
                 });
