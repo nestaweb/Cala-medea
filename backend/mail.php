@@ -1,6 +1,6 @@
 <?php
 
-$to = "nesta.loisy@gmail.com";
+$to = "isolella.aurore.juliette@gmail.com";
 
 $subject = "Nouveau message de " . $_POST["firstName"] . " " . $_POST["lastName"];
 
